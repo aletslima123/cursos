@@ -1,6 +1,6 @@
 body{
 	width: 100%;
-	min-width: 280px;
+	min-width: 256px;
 	font-size: 16px;
 	font-family: 'lato';
 	color: #fff;
@@ -233,8 +233,6 @@ body{
 		width: 400px;
 		height: 288px;
 		background-image: url(../img/laptop.svg);
-		background-repeat: no-repeat;
-		background-position: center right;
 		z-index: 2;
 	}
 	.m-main-title{

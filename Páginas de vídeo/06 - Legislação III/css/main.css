@@ -1,6 +1,6 @@
 body{
 	width: 100%;
-	min-width: 280px;
+	min-width: 256px;
 	font-size: 16px;
 	font-family: 'lato';
 	color: #fff;
@@ -113,6 +113,16 @@ body{
 }
 
 @media(min-width: 415px){
+	.l-container{
+		padding: 30px 50px 30px 50px;
+	}
+	.l-container:before{
+		border-top: 100px solid #fff;
+		
+	}
+	.l-container:after{
+		border-bottom: 100px solid #fff;
+	}
 	.m-description{
 		font-size: 16px;
 	}
@@ -129,16 +139,19 @@ body{
 		margin-top: -11px;
 	}
 	.l-header{
-		padding: 0 50px;
-	}
-	.l-container{
-		padding: 30px 50px 30px 50px;
+		padding: 5px 50px;
 	}
 	.l-footer{
 		padding: 0 50px;
 	}
 }
 @media(min-width: 990px){
+	.l-container:before{
+		border-top: 120px solid #fff;
+	}
+	.l-container:after{
+		border-bottom: 140px solid #fff;
+	}
 	.l-footer{
 		display: none;
 	}
@@ -158,5 +171,8 @@ body{
 		-ms-align-items: center;
 		align-items: center;
 		align-content: center;
+	}
+	.m-description{
+		margin:  0;
 	}
 }

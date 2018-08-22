@@ -38,8 +38,46 @@ body{
 }
 
 .m-grid_cel{
+	display: block;
+	text-decoration: none;
+	position: relative;
 	width: 100%;
 	margin-bottom: 20px;
+	color: #FFF;
+}
+.m-grid_cel:active, .m-grid_cel:hover, .m-grid_cel:visited, .m-grid_cel:focus{
+	color: #FFF;
+}
+
+.m-grid_cel--visited{
+	opacity: .6;
+}
+
+.m-grid_cel:hover::before{
+	transition: opacity .3s ease-in-out;
+	opacity: 1;
+}
+
+.m-grid_cel:before{
+	cursor: pointer;
+	transition: opacity .3s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	content: "INICIAR MÓDULO";
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(69,69,69, .72);
+	border-radius: 5px;
+	font-weight: 800;
+	z-index: 9;
+}
+
+.m-grid_cel--visited:before{
+	content: "REVISAR MÓDULO";
 }
 
 .m-grid_cel--desktop{
@@ -180,7 +218,7 @@ body{
 		padding: 20px 0;
 		position: relative;
 		width: 100%;
-		height: 180px;
+		min-height: 180px;
 		justify-content: center;
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
@@ -194,7 +232,7 @@ body{
 		content:"";
 		position: absolute;
 		display: block;
-		bottom: 40%;
+		bottom: 48%;
 		left: 0;
 		width: 0;
 		height: 0;
@@ -208,7 +246,7 @@ body{
 		position: absolute;
 		display: block;
 		width: 100%;
-		height: 88px;
+		height: 87px;
 		background-color: #4242D6;
 		bottom: 0;
 		z-index: 1;
@@ -238,8 +276,14 @@ body{
 }
 
 @media(min-width: 988px){
+	.m-card{
+		min-height: 220px;
+	}
 	.m-card:before{
 		border-left: 20em solid transparent;
+	}
+	.m-card:after{
+		height: 105px;
 	}
 	.m-grid_cel{
 		width: 22%;

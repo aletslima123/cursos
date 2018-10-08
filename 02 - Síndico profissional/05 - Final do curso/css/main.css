@@ -1,0 +1,336 @@
+body{
+	width: 100%;
+	min-width: 256px;
+	font-size: 16px;
+	font-family: 'lato';
+	color: #fff;
+}
+
+.l-container{
+	width: 100%;
+	display: block;
+}
+
+.l-header{
+	position: relative;
+	width: 100%;
+	min-height: 180px;
+	overflow: visible;
+	background-image: url(../img/sindicopro.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	box-sizing: border-box;
+	color: #FFF;
+}
+
+.l-header:before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+	z-index: 1;
+}
+
+.l-header:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(66, 66, 214, .6);
+	z-index: 1;
+}
+
+.textHeader{
+	width: 100%;
+}
+
+.l-header_container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center;
+	padding: 20px 20px 0 20px;
+	z-index: 2;
+}
+
+.l-section{
+	color: #3E3E3E;
+	padding: 30px 20px;
+}
+
+.m-mainTitle{
+	font-size: 1.450em;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.m-subTitle{
+	font-size: 0.850em;
+	font-weight: 400;
+}
+
+.m-list{
+	padding-left: 14px;
+	margin-bottom: 30px;
+}
+
+.m-list_item{
+	position: relative;
+	margin-bottom: 10px;
+	font-size: 1em; /*16*/
+}
+
+.m-list_item:before{
+	content: "";
+	position: absolute;
+	left: -14px;
+	top: 6px;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border: 1px solid #4242D6;
+	box-sizing: border-box;
+}
+
+.m-logo{
+	width: 120px;
+	margin-bottom: 20px;
+}
+
+.m-title{
+	font-size: 1.313em;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.m-paragraph{
+	margin-bottom: 10px;
+}
+
+.mb-3{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.m-accordionContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	font-size: 16px;
+	font-family: "Lato";
+}
+
+.m-accordion{
+	cursor: pointer;
+	width: 100%;
+	min-height: 70px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	border: 1px solid #E2E2E2;
+	border-radius: 5px;
+	padding: 16px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.m-accordion:before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	top: 30px;
+	right: 16px;
+	transform: rotate(45deg);
+	border-right: 2px solid #2E2E2E;
+	border-bottom: 2px solid #2E2E2E;
+}
+
+.m-accordion_content{
+	width: 100%;
+}
+
+.m-accordion_icon{
+	display: none;
+	width: 70px;
+	height: 50px;
+	margin-right: 16px;
+}
+
+.m-accordion_icon--laptop{
+	background-image: url(../img/laptop.svg);
+}
+
+.m-accordion_icon--legislacao1{
+	background-image: url(../img/legislacao1.svg);
+}
+
+.m-accordion_icon--implantacao{
+	background-image: url(../img/implantacao.svg);
+}
+
+.m-accordion_icon--legislacao2{
+	background-image: url(../img/lei2.svg);
+}
+
+.m-accordion_icon--seguranca{
+	background-image: url(../img/seguranca.svg);
+}
+
+.m-accordion_icon--legislacao3{
+	background-image: url(../img/legislacao3.svg);
+}
+
+.m-accordion_icon--gestao-finan{
+	background-image: url(../img/gestao-finan.svg);
+}
+
+.m-accordion_icon--rh{
+	background-image: url(../img/rh.svg);
+}
+
+.m-accordion_icon--sustentabilidade{
+	background-image: url(../img/sustentabilidade.svg);
+}
+
+.m-accordion_icon--clube{
+	background-image: url(../img/clube.svg);
+}
+
+.m-accordion_icon--manutencao{
+	background-image: url(../img/manutencao.svg);
+}
+
+.m-accordion_icon--assembleia{
+	background-image: url(../img/assembleia.svg);
+}
+
+.m-accordion_title{
+	margin: 0;
+	font-size: 1em;
+	font-weight: 500;
+	max-width: 170px;
+}
+
+.m-accordion_description{  
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+}
+
+.m-accordion_description .m-list{
+	margin-top: 20px;
+}
+
+.opened:before{
+	transform: rotate(225deg);
+}
+
+.opened .m-accordion_description{
+	height: auto;
+	max-height: 500px;  
+}
+
+@media(min-width: 510px){
+	.m-mainTitle{
+		font-size: 1.750em;
+	}
+	.m-subTitle{
+		font-size: 1.125em;
+	}
+	.l-header_container{
+		padding: 30px 20px 0 20px;
+	}
+	.m-accordion_icon{
+		display: block;
+	}
+	.m-accordion_content{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		-ms-align-items: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+	}
+	.m-accordion_title{
+		max-width: none;
+		width: 76%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+@media(min-width: 980px){
+	.l-header_container{
+		flex-direction: row;
+		justify-content: space-between;
+		-ms-align-items: center;
+		align-items: center;
+		align-content: center;
+	}
+	.textHeader{
+		order: 0;
+	}
+	.m-logo{
+		width: 200px;
+		order: 1;
+	}
+	.m-mainTitle{
+		font-size: 2.250em;
+	}
+	.m-subTitle{
+		font-size: 1.313em;
+	}
+	.m-title{
+		font-size: 1.563em;
+	}
+	.m-paragraph{
+		font-size: 1.125em;
+	}
+	.m-list_item{
+		font-size: 1.125em;;
+	}
+	.m-accordion_description .m-list_item{
+		font-size: 0.875em;
+	}
+	.m-accordionContainer{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.m-accordion{
+		width: 32%;
+		margin-bottom: 25px;
+	}
+	.m-accordion_title{
+		width: 55%;
+		font-size: 0.875em;
+
+	}
+	.m-accordion_content{
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.m-accordion_icon{
+		min-width: 70px;
+	}
+}

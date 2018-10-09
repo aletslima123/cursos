@@ -1,0 +1,167 @@
+body{
+	width: 100%;
+	min-width: 256px;
+	font-size: 16px;
+	font-family: 'lato';
+	color: #fff;
+}
+
+.l-container{
+	width: 100%;
+	display: block;
+}
+
+.l-header{
+	position: relative;
+	width: 100%;
+	min-height: 123px;
+	overflow: visible;
+	background-image: url(../img/sindicopro.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	box-sizing: border-box;
+	color: #FFF;
+}
+
+.l-header:before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+	z-index: 1;
+}
+
+.l-header:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(66, 66, 214, .6);
+	z-index: 1;
+}
+
+.textHeader{
+	width: 100%;
+}
+
+.l-header_container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center;
+	padding: 20px 20px 0 20px;
+	z-index: 2;
+}
+
+.l-section{
+	color: #3E3E3E;
+	padding: 30px 20px;
+}
+
+.m-mainTitle{
+	font-size: 1.750em;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.m-logo{
+	width: 120px;
+	margin-bottom: 20px;
+}
+
+.m-title{
+	font-size: 1.313em;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.m-paragraph{
+	margin-bottom: 10px;
+}
+
+.strong{
+	font-weight: 600;
+}
+
+.useless{
+	display: block;
+	font-size: 0.875em;
+}
+
+.m-box{
+	width: 100%;
+	background-color: #4242D6;
+	color: #FFF;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.m-box_title{
+	display: inline-block;
+	position: relative;
+	font-weight: 600;
+	font-size: 1.313em;
+	margin-bottom: 20px;
+}
+.m-box_title:before{
+	position: absolute;
+	bottom: -6px;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+}
+
+.mb-3{
+	margin-bottom: 30px;
+}
+
+@media(min-width: 510px){
+	.m-mainTitle{
+		
+	}
+	.l-header_container{
+		padding: 30px 20px 0 20px;
+	}
+}
+
+@media(min-width: 980px){
+	.l-header_container{
+		flex-direction: row;
+		justify-content: space-between;
+		-ms-align-items: center;
+		align-items: center;
+		align-content: center;
+	}
+	.textHeader{
+		order: 0;
+	}
+	.m-logo{
+		width: 200px;
+		order: 1;
+	}
+	.m-mainTitle{
+		font-size: 2.250em;
+	}
+	.m-title{
+		font-size: 1.563em;
+	}
+	.m-paragraph{
+		font-size: 1.125em;
+		margin-bottom: 18px;
+	}
+	.mb-3{
+		margin-bottom: 40px;
+	}
+}

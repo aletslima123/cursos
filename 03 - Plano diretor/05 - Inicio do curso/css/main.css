@@ -16,7 +16,7 @@ body{
 	width: 100%;
 	min-height: 180px;
 	overflow: visible;
-	background-image: url(../img/sindicopro.jpg);
+	background-image: url(../img/planodiretor.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -41,7 +41,7 @@ body{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(66, 66, 214, .6);
+	background-color: rgba(5, 155, 142, .6);
 	z-index: 1;
 }
 
